@@ -1,0 +1,30 @@
+{
+  "name": "corporate-training-hub",
+  "version": "1.0.0",
+  "description": "Corporate Training & Assessment Hub - MERN Stack",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install",
+    "install-client": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "express-validator": "^7.0.1",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
