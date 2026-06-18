@@ -1,5 +1,7 @@
 import React from 'react';
 
+//this may not work properly because due to some problems all files were not uploaded properly an am sorry for that 
+
 export const Spinner = ({ size = 36, text = '' }) => (
   <div className="loading-screen">
     <div className="spinner" style={{ width: size, height: size }} />
